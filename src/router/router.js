@@ -7,6 +7,11 @@ import StocksPage from '../pages/StocksPage.vue';
 const router = createRouter({
     routes: [
         {
+            path: '/',
+            name: 'home',
+            component: IncomesPage
+        },
+        {
             path: '/incomes',
             name: 'incomes',
             component: IncomesPage

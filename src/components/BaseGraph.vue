@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue';
+import { ref, watch, defineProps } from 'vue';
 import { Line } from 'vue-chartjs';
 import {
     Chart as ChartJS,
