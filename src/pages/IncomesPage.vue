@@ -2,6 +2,7 @@
 
 <script setup>
 import { useRoute, useRouter } from 'vue-router';
+import BaseHeader from '../components/BaseHeader.vue'
 
 // const router = useRouter();
 // const route = useRoute();
@@ -17,6 +18,7 @@ import { useRoute, useRouter } from 'vue-router';
 </script>
 
 <template>
+    <BaseHeader />
     <div class="">IncomesPage</div>
 
 </template>
