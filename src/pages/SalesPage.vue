@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import BaseHeader from '../components/BaseHeader.vue';
+import BaseGraph from '../components/BaseGraph.vue';
 const dataSLP = ref({})
 
 const goData = async () => {
@@ -25,7 +26,9 @@ onMounted(async () => {
     <BaseHeader />
     <div class="sales__wrapper">
         <h1 class="sales__haed">SalesPage</h1>
-        <div class="sales__graph"></div>
+        <div class="sales__graph">
+            <BaseGraph :data="dataSLP" :labelField="`date`" :valueField="`total_price`"/>
+        </div>
         <div class="sales__table"></div>
     </div>
    
