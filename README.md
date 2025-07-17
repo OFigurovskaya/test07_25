@@ -1,29 +1,18 @@
-# test
+Тестовое задание на Vue 3
 
-This template should help get you started developing with Vue 3 in Vite.
+Деплой: https://ofigurovskaya.github.io/test07_25/#/sales
 
-## Recommended IDE Setup
+Данные загружаются при помощи прокси-сервера https://cors-anywhere.herokuapp.com/
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Функционал:
 
-## Customize configuration
+При загрузке страницы уходит запрос на сервер за списком данных. Данные фильтруются по столбцам. При нажатии на заголовок столбца данные сортируются по возрастанию или убыванию (об этом свидетельствует соответствующая стрелочка). Шапка таблицы прилипает к верхней части блока и видна при прокрутке. График подключен при помощи библиотеки chart.js. Роутинг обеспечивает vue-router. Реализована пагинация внизу таблицы.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
 
-## Project Setup
+Стек
 
-```sh
-npm install
-```
+JavaScript, Vue3, vue-router, chart.js, vite
 
-### Compile and Hot-Reload for Development
+Установка
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Для запуска на локальной машине необходимо: Установить npm зависимости: npm install. Далее - npm run dev
