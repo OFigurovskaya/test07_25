@@ -23,16 +23,12 @@ onMounted(async () => {
 
 
 <template>
-    <div>
+    <div class="content-wrapper">
         <BaseHeader />
-        <div class="sales__wrapper">
             <h1 class="sales__haed">SalesPage</h1>
             <div class="sales__graph">
                 <BaseGraph :data="dataSLP" :labelField="`date`" :valueField="`total_price`" />
             </div>
-            <div class="sales__table">
                 <BaseTable :data="dataSLP" />
-            </div>
-        </div>
     </div>
 </template>

@@ -28,16 +28,12 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div>
+    <div class="content-wrapper">
         <BaseHeader />
-        <div class="incom__wrapper">
             <h1 class="incom__haed">IncomesPage</h1>
             <div class="incom__graph" style="height: 400px;">
                 <BaseGraph :data="dataIP" :labelField="`date`" :valueField="`quantity`"/>
             </div>
-            <div class="incom__table">
                 <BaseTable :data="dataIP"/>
-            </div>
-        </div>
     </div>
 </template>

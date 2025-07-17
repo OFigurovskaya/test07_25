@@ -72,7 +72,7 @@ watch(() => props.data, (newData) => {
 </script>
 
 <template>
-  <div style="height: 400px;">
+  <div class="graph">
     <Line :data="chartData" :options="chartOptions" />
   </div>
 </template>

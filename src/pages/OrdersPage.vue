@@ -22,16 +22,12 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div>
+   <div class="content-wrapper">
         <BaseHeader />
-        <div class="orders__wrapper">
             <h1 class="orders__haed">OrdersPage</h1>
             <div class="orders__graph" style="height: 400px;">
                 <BaseGraph :data="dataOP" :labelField="`date`" :valueField="`total_price`" />
             </div>
-            <div class="orders__table">
                 <BaseTable :data="dataOP" />
-            </div>
-        </div>
     </div>
 </template>

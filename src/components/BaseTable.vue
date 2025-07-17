@@ -63,8 +63,8 @@ const goToPage = (page) => {
 </script>
 
 <template>
-    <div>
-        <table>
+    <div class="table-wrapper">
+        <table class="table">
             <thead>
                 <tr>
                     <th v-for="key in keys" :key="key" @click="sortBy(key)" style="cursor: pointer;">
@@ -79,7 +79,7 @@ const goToPage = (page) => {
                 </tr>
             </tbody>
         </table>
-        <div style="margin-top: 10px;">
+        <div style="margin-top: 10px;" class="pagination">
             <button @click="goToPage(currentPage - 1)" :disabled="currentPage === 1">
                 Назад
             </button>
